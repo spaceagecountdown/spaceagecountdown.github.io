@@ -8,13 +8,22 @@
   <style>
     body {
       color: white;
-      font-size: 30px;
-      height: 90vh;
+      font-size: 24px;
+      height: 80vh;
       text-align: center;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       background-color: #030304;
     }
 
+    @media (min-width: 768px) {
+      body {
+        font-size: 30px;
+        height: 90vh;
+      }
+      #countdown {
+        font-size: 50px;
+      }
+    }
     video {
       position: absolute;
       top: 0;
@@ -23,7 +32,7 @@
       height: 100%;
       opacity: 0.8;
       z-index: -1;
-      filter: blur(5px)
+      filter: blur(8px)
     }
   </style>
 </head>
